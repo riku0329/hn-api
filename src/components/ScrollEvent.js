@@ -8,7 +8,7 @@ const ScrollEventWrap = styled.div`
   height: 5vh;
   width: 100%;
   margin: 0 auto;
-`
+`;
 
 const ScrollEvent = ({ addStories }) => {
   const { count, prevCount } = useInfiniteScroll();
@@ -32,7 +32,11 @@ const ScrollEvent = ({ addStories }) => {
 
   console.log(isLoading);
 
-  return <ScrollEventWrap>{isLoading ? <ScrollSpinner isLoading={isLoading} /> : null}</ScrollEventWrap>;
+  return (
+    <ScrollEventWrap>
+      {isLoading ? <ScrollSpinner isLoading={isLoading} /> : null}
+    </ScrollEventWrap>
+  );
 };
 
 export default ScrollEvent;
