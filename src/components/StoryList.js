@@ -11,7 +11,6 @@ const StoryListWrap = styled.ul`
 `;
 
 const StoryList = ({ stories }) => {
-  console.log(stories);
   return (
     <StoryListWrap>
       {stories.map(({ id, ...otherStoryprops }) => (
