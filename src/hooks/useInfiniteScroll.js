@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 
-const MAX_STORIES = 150;
+const MAX_STORIES = 400;
 const STORY_IMCREMENT = 5;
 
 const debounce = (func, wait, immediate, args) => {

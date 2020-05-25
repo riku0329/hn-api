@@ -13,8 +13,8 @@ const StoryListWrap = styled.ul`
 const StoryList = ({ stories }) => {
   return (
     <StoryListWrap>
-      {stories.map(({ id, ...otherStoryprops }) => (
-        <StoryItem key={id} {...otherStoryprops} />
+      {stories.map(({ id, ...otherStoryprops }, i) => (
+        <StoryItem key={id} {...otherStoryprops} i={i} />
       ))}
     </StoryListWrap>
   );

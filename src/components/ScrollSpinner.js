@@ -9,7 +9,7 @@ const ScrollSpinnerWrap = styled.div`
   ${(p) => (p.loading ? 'opacity: 1' : 'opacity: 0')};
 
   .circle {
-    background-color: #fff;
+    background-color: #BA2E43;
     width: 10px;
     height: 10px;
     border-radius: 50%;
