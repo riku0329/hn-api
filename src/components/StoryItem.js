@@ -18,7 +18,7 @@ const StoryItem = ({ title, url, by, time, i}) => {
   return (
     <React.Fragment>
       <StoryItemWrap>
-        <a className='story_link-hover' href={url} target='blank'>
+        <a className='story_link-hover' href={url}>
           <h2><span>{i + 1}</span>{title}</h2>
         </a>
         <p>
